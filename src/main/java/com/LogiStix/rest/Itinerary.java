@@ -4,7 +4,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 @Path("/")
-public class Origin {
+public class Itinerary {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
@@ -12,6 +12,5 @@ public class Origin {
     public String getOrigin(@PathParam("origin") String origin, @PathParam("destination") String destination) {
         return "Trip is " + origin + " to " + destination;
     }
-
 
 }
